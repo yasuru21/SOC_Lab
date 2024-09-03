@@ -286,3 +286,6 @@ Final Workflow:
 3. Check Reputation Score with VirusTotal
 4. Send details to TheHive to create alert
 5. Send email to SOC Analyst to begin investigation
+
+Final Thoughts:
+This lab provides a comprehensive exploration of essential skills for SOC and cybersecurity analysts, particularly focusing on alert handling and SOAR automation. Mastery of these skills can significantly streamline analyst workflows. Wazuh, Shuffle, and TheHive are excellent resources for hands-on practice, and this lab effectively guides users through the intricacies of these tools, making it a valuable learning experience.
