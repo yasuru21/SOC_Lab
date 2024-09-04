@@ -2,7 +2,7 @@
 
 This step is important for mapping out how we want to build/design our lab logically. Understanding how our data will flow is key to making everything work.
 
-![SOC Automation Lab Diagram.drawio.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a661d6bf-2122-48e7-9e3e-2cbd03caf715/e81d8bab-26e2-453a-b2f5-799d388ca42b/SOC_Automation_Lab_Diagram.drawio.png)
+![SOC Automation Lab Diagram drawio](https://github.com/user-attachments/assets/028ab5cd-c318-48c4-8d9e-035419788505)
 
 ## Part 2: Install Applications and Virtual Machines
 
