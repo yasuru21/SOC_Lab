@@ -30,14 +30,14 @@ This step is important for mapping out how we want to build/design our lab logic
 ### 3. Set Up Wazuh Server
 
 - Use a cloud provider (e.g., DigitalOcean)
-- Create a droplet:
+- Create a Virtual Machine (Droplet if using DigitalOcean):
     - OS: Ubuntu 22.04
     - Plan: Basic with 4GB RAM, 50GB SSD
     - Region: Choose nearest to you
 - Set up a firewall: (If you do not create rules for your firewall, SSH is open to the public)
     - Allow SSH access only from your IP
     - Apply firewall to Wazuh droplet
-- SSH into the Wazuh server
+- SSH into the Wazuh server using PuTTY or any other SSH Tool
 - Update and upgrade: `apt-get update && apt-get upgrade`
 - Install Wazuh using the curl command (refer to Wazuh documentation)
 - Note down the admin username and password
@@ -45,7 +45,7 @@ This step is important for mapping out how we want to build/design our lab logic
 
 ### 4. Set Up TheHive Server
 
-- Create another droplet for TheHive (similar to Wazuh setup)
+- Create another Virtual Machine for TheHive (same specs as Wazuh server)
 - SSH into TheHive server
 - Install prerequisites:
     - Java
@@ -54,7 +54,7 @@ This step is important for mapping out how we want to build/design our lab logic
     - TheHive
 - Follow TheHive documentation for detailed installation steps
 
-After installation, the next step is to configure Wazuh and TheHive to work together. This will be covered in the next part of the series.
+After installation, the next step is to configure Wazuh and TheHive to work together.
 
 ## Part 3: Configuring TheHive and Wazuh Server
 
@@ -278,7 +278,7 @@ This completes the process of generating telemetry from the Windows 10 VM, inges
 
 This guide outlines the process of connecting Shuffle (SOAR) to TheHive and setting up email notifications for Mimikatz detection alerts. Follow these steps to create a comprehensive automated workflow for handling security alerts.
 
-Final Workflow:
+Final Result Workflow:
 
 1. Mimikatz Alert sent to Shuffle
 2. Shuffle receives Mimikatz alert 
