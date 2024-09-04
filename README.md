@@ -63,7 +63,7 @@ After installation, the next step is to configure Wazuh and TheHive to work toge
 ### 1.1 Configure Cassandra
 
 - Edit Cassandra's configuration file: `nano /etc/cassandra/cassandra.yaml`
-- Change the cluster name (e.g., to "mydfir")
+- Change the cluster name (e.g., to "demo")
 - Update listen_address and rpc_address to your TheHive server's public IP
 - Change the seed_provider address to your TheHive server's public IP
 - Save and exit the file
@@ -91,7 +91,7 @@ systemctl enable elasticsearch`
 - Change ownership of TheHive directory: `chown -R thehive:thehive /opt/thp`
 - Edit TheHive configuration: `nano /etc/thehive/application.conf`
 - Update database.hostname and index.hostname to your TheHive server's public IP
-- Change [db.name](http://db.name) to match Cassandra's cluster name (e.g., "mydfir")
+- Change [db.name](http://db.name) to match Cassandra's cluster name (e.g., "demo")
 - Update application.baseUrl to your TheHive server's public IP
 - Save and exit the file
 - Start and enable TheHive:
